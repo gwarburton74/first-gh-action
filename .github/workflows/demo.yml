@@ -1,7 +1,7 @@
 name: test
 on: workflow_dispatch
 jobs:
-  runs_on: ubuntu_latest
+  runs_on: ubuntu-latest
   steps:
     - name: Print Hello World
       run: echo "Hello World!"
