@@ -3,8 +3,9 @@ on: workflow_dispatch
 jobs:
   runs_on: ubuntu-latest
   steps:
-    - name: Print Hello World
-      run: echo "Hello World!"
-    - name: Print Goodbye Message
-      run: echo "Thanks for checking out my first GH Action!  Good-bye!!!"
+    test-job:
+      - name: Print Hello World
+        run: echo "Hello World!"
+      - name: Print Goodbye Message
+        run: echo "Thanks for checking out my first GH Action!  Good-bye!!!"
 
