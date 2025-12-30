@@ -1,5 +1,8 @@
 name: test
-on: workflow_dispatch
+
+on:
+  workflow_dispatch:
+
 jobs:
   test-job:
     runs-on: ubuntu-latest
@@ -7,5 +10,4 @@ jobs:
       - name: Print Hello World
         run: echo "Hello World!"
       - name: Print Goodbye Message
-        run: echo "Thanks for checking out my first GH Action!  Good-bye!!!"
-
+        run: echo "Thanks for checking out my first GH Action! Good-bye!!!"
